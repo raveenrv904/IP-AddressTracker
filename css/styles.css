@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+}
+
+.header {
+    background-image: url(../images/pattern-bg.png);
+    text-align: center;
+    height: 35vh;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
+    padding: 30px 0 30px 0;
+    font-weight: 500;
+    color: #fff;
+}
+
+input[type="text"] {
+    width: 27.778rem;
+    height: 2.778rem;
+    border-top-left-radius: 1.22rem;
+    border-bottom-left-radius: 1.22rem;
+    border-style: none;
+    padding-left: 1.22rem;
+    letter-spacing: .055rem;
+    font-size: 0.944rem;
+}
+
+.image {
+    display: inline;
+    background-color: black;
+    width: 2.778rem;
+    border-top-right-radius: 1.22rem;
+    border-bottom-right-radius: 1.22rem;
+    border-style: none;
+}
+
+svg {
+    margin-top: 1rem;
+}
+
+::placeholder {
+    font-size: .833rem;
+    font-weight: 500;
+}
+
+#map {
+    height: 65vh;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    background-color: #fff;
+    border-radius: 1.22rem;
+    position: absolute;
+    left: 50%;
+    top: 26%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.hp {
+    padding: 1.22rem 2.778rem;
+}
+
+h2 {
+    padding-bottom: .55rem;
+    font-size: .556rem;
+    text-transform: uppercase;
+    letter-spacing: .055rem;
+}
+
+p {
+    font-size: 1.22rem;
+    font-weight: 700;
+}
+
+@media (max-width: 425px) {
+    .header {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    input[type="text"] {
+        width: 300px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .hp {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    h2 {
+        padding: 0;
+        font-size: 7px;
+        font-weight: 400;
+    }
+
+    .image {
+        width: 30px;
+        height: 30px;
+    }
+
+    p {
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    svg {
+        margin-top: 8px;
+    }
+}
